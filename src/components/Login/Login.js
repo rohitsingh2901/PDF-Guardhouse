@@ -8,7 +8,7 @@ const Login = (props) => {
   const [password, setPassword] = useState('');
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'JobHub - Login'
+    document.title = 'PDF Guardhouse - Login'
   }, [])
 
   const handleVerifyCredentials = (e) => {
@@ -16,7 +16,25 @@ const Login = (props) => {
     const credentials = {
       email,password
     };
-    
+    // fetch('https://brassy-well-trick.glitch.me/verify', {
+    //   method: "POST",
+    //   body: JSON.stringify(credentials),
+    //   headers: {"Content-type": "application/json"}
+    // })
+    // .then(response => response.json()) 
+    // .then(json => {
+    //   console.log(json)
+    //   if(json.error){
+    //   props.alert.alert("User not found",'danger')
+    //   }
+    //   else{
+    //     props.alert.alert("Verifed User",'success')
+    //   }
+    // })
+    // .catch(err => {
+    //   console.log(err)
+    //   props.alert.alert("Some error occured",'danger')
+    // });
 
   };
   return (

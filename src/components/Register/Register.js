@@ -18,7 +18,29 @@ const Register = (props) => {
     const credentials = {
       email,password,fname,lname
     };
-    
+    // fetch('https://brassy-well-trick.glitch.me/register', {
+    //   method: "POST",
+    //   body: JSON.stringify(credentials),
+    //   headers: {"Content-type": "application/json"}
+    // })
+    // .then(response => response.json()) 
+    // .then(json => {
+    //   console.log(json)
+    //   setEmail('')
+    //   setPassword('')
+    //   setFname('')
+    //   setLname('')
+    //   if(json.error){
+    //     props.alert.alert('Email already exists','danger');
+    //   }
+    //   else{
+    //     props.alert.alert('Congrats! Your can now login','success');
+    //   }
+    // })
+    // .catch(err => {
+    //   console.log(err)
+    //   props.alert.alert('Something went wrong','danger');
+    // });
 
   };
 
