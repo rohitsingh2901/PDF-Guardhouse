@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Login from "./components/Login/Login";
 import PDFList from "./components/PDF List/PdfList";
 import UserDashboard from "./components/User Dashboard/UserDashboard";
+import Payment from "./components/Payment/Payment";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
     </Routes>  
     <Routes>
     <Route exact path="/dashboard" Component={UserDashboard}/>
+    </Routes>  
+    <Routes>
+    <Route exact path="/home" Component={Payment}/>
     </Routes>  
 
     </Router> 
